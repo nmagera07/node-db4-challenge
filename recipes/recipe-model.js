@@ -6,9 +6,9 @@ function getRecipes() {
 
 function getShoppingList(recipe_id) {
     return db('recipes')
-        .innerJoin('recipeIngredients', 'recipes.id', 'recipeIngredients.recipe_id')
-        .innerJoin('ingredients', 'recipeIngredients.ingredient_id', 'ingredients.id')
-        .select('recipes.recipe_name', 'ingredients.ingredient_name', 'recipeIngredients.quantity')
+        .innerJoin('recipeIngredients', 'recipes.id', 'recipeIngredients.recipeId')
+        .innerJoin('ingredients', 'recipeIngredients.ingredientId', 'ingredients.id')
+        .select('recipes.recipeName', 'ingredients.ingredientName', 'recipeIngredients.ingredientQuantity')
         .where({ recipe_id })
 }
 
