@@ -7,6 +7,6 @@ exports.seed = function(knex) {
         { ingredientQuantity: '1 cup', recipeId: '2', ingredientId: '4'},
         { ingredientQuantity: '16 oz', recipeId: '2', ingredientId: '5' },
         { ingredientQuantity: '3 shells', recipeId: '3', ingredientId: '6' },
-        { ingredientQuantity: '1 lb', recipeId: '3', ingredientId: '7' },
+        { ingredientQuantity: '1 lb', recipeId: '3', ingredientId: '1' },
       ]);
 };
